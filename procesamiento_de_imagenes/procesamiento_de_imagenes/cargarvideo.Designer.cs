@@ -28,207 +28,201 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.trackBar6 = new System.Windows.Forms.TrackBar();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_guardar = new System.Windows.Forms.Button();
+            this.btn_reproducir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BtnFoto = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Btnvideo = new System.Windows.Forms.Button();
+            this.btn_parar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.filtrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invertirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aberracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gammaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.brilloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contrasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobbelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ruidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pixelacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // trackBar6
+            // Btn_guardar
             // 
-            this.trackBar6.Location = new System.Drawing.Point(699, 247);
-            this.trackBar6.Name = "trackBar6";
-            this.trackBar6.Size = new System.Drawing.Size(234, 45);
-            this.trackBar6.TabIndex = 44;
+            this.Btn_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Btn_guardar.FlatAppearance.BorderSize = 0;
+            this.Btn_guardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.Btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_guardar.ForeColor = System.Drawing.SystemColors.Window;
+            this.Btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_guardar.Location = new System.Drawing.Point(514, 466);
+            this.Btn_guardar.Name = "Btn_guardar";
+            this.Btn_guardar.Size = new System.Drawing.Size(167, 30);
+            this.Btn_guardar.TabIndex = 38;
+            this.Btn_guardar.Text = "Guardar video";
+            this.Btn_guardar.UseVisualStyleBackColor = false;
             // 
-            // trackBar5
+            // btn_reproducir
             // 
-            this.trackBar5.Location = new System.Drawing.Point(699, 185);
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Size = new System.Drawing.Size(234, 45);
-            this.trackBar5.TabIndex = 43;
-            // 
-            // trackBar4
-            // 
-            this.trackBar4.Location = new System.Drawing.Point(699, 106);
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(234, 45);
-            this.trackBar4.TabIndex = 42;
-            // 
-            // trackBar3
-            // 
-            this.trackBar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.trackBar3.Location = new System.Drawing.Point(148, 483);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(313, 45);
-            this.trackBar3.TabIndex = 41;
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.BackColor = System.Drawing.Color.DarkGreen;
-            this.trackBar2.Location = new System.Drawing.Point(148, 432);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(313, 45);
-            this.trackBar2.TabIndex = 40;
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.Color.Red;
-            this.trackBar1.Location = new System.Drawing.Point(148, 381);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(313, 45);
-            this.trackBar1.TabIndex = 39;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(355, 327);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 30);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Guardar foto";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(243, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 30);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Borrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_reproducir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_reproducir.FlatAppearance.BorderSize = 0;
+            this.btn_reproducir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btn_reproducir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reproducir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reproducir.ForeColor = System.Drawing.SystemColors.Window;
+            this.btn_reproducir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reproducir.Location = new System.Drawing.Point(232, 466);
+            this.btn_reproducir.Name = "btn_reproducir";
+            this.btn_reproducir.Size = new System.Drawing.Size(106, 30);
+            this.btn_reproducir.TabIndex = 37;
+            this.btn_reproducir.Text = "Reproducir";
+            this.btn_reproducir.UseVisualStyleBackColor = false;
+            this.btn_reproducir.Click += new System.EventHandler(this.btn_reproducir_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(136, 3);
+            this.label2.Location = new System.Drawing.Point(38, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 17);
             this.label2.TabIndex = 36;
             this.label2.Text = "Video";
             // 
-            // label1
+            // Btnvideo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(696, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 17);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Filtros";
+            this.Btnvideo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.Btnvideo.FlatAppearance.BorderSize = 0;
+            this.Btnvideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.Btnvideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnvideo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnvideo.ForeColor = System.Drawing.SystemColors.Window;
+            this.Btnvideo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btnvideo.Location = new System.Drawing.Point(41, 466);
+            this.Btnvideo.Name = "Btnvideo";
+            this.Btnvideo.Size = new System.Drawing.Size(125, 30);
+            this.Btnvideo.TabIndex = 33;
+            this.Btnvideo.Text = "Cargar video";
+            this.Btnvideo.UseVisualStyleBackColor = false;
+            this.Btnvideo.Click += new System.EventHandler(this.Btnvideo_Click);
             // 
-            // comboBox1
+            // btn_parar
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(699, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 21);
-            this.comboBox1.TabIndex = 34;
+            this.btn_parar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btn_parar.FlatAppearance.BorderSize = 0;
+            this.btn_parar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btn_parar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_parar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_parar.ForeColor = System.Drawing.SystemColors.Window;
+            this.btn_parar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_parar.Location = new System.Drawing.Point(344, 466);
+            this.btn_parar.Name = "btn_parar";
+            this.btn_parar.Size = new System.Drawing.Size(106, 30);
+            this.btn_parar.TabIndex = 50;
+            this.btn_parar.Text = "Parar";
+            this.btn_parar.UseVisualStyleBackColor = false;
+            this.btn_parar.Click += new System.EventHandler(this.btn_parar_Click);
             // 
-            // BtnFoto
+            // pictureBox1
             // 
-            this.BtnFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.BtnFoto.FlatAppearance.BorderSize = 0;
-            this.BtnFoto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.BtnFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFoto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFoto.ForeColor = System.Drawing.SystemColors.Window;
-            this.BtnFoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnFoto.Location = new System.Drawing.Point(112, 327);
-            this.BtnFoto.Name = "BtnFoto";
-            this.BtnFoto.Size = new System.Drawing.Size(125, 30);
-            this.BtnFoto.TabIndex = 33;
-            this.BtnFoto.Text = "Cargar Foto";
-            this.BtnFoto.UseVisualStyleBackColor = false;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 52);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(640, 408);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // menuStrip1
             // 
-            this.pictureBox2.Image = global::procesamiento_de_imagenes.Properties.Resources.gerardo;
-            this.pictureBox2.Location = new System.Drawing.Point(130, 23);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(313, 261);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.filtrosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1048, 24);
+            this.menuStrip1.TabIndex = 52;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // pictureBox6
+            // filtrosToolStripMenuItem
             // 
-            this.pictureBox6.Image = global::procesamiento_de_imagenes.Properties.Resources.before_play_back_previous_icon_219238;
-            this.pictureBox6.Location = new System.Drawing.Point(149, 290);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(54, 31);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 48;
-            this.pictureBox6.TabStop = false;
+            this.filtrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.invertirToolStripMenuItem,
+            this.aberracionToolStripMenuItem,
+            this.colorizarToolStripMenuItem,
+            this.gammaToolStripMenuItem,
+            this.brilloToolStripMenuItem,
+            this.contrasteToolStripMenuItem,
+            this.sobbelToolStripMenuItem,
+            this.ruidoToolStripMenuItem,
+            this.pixelacionToolStripMenuItem,
+            this.saturacionToolStripMenuItem});
+            this.filtrosToolStripMenuItem.Name = "filtrosToolStripMenuItem";
+            this.filtrosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.filtrosToolStripMenuItem.Text = "Filtros";
             // 
-            // pictureBox5
+            // invertirToolStripMenuItem
             // 
-            this.pictureBox5.Image = global::procesamiento_de_imagenes.Properties.Resources._1486348534_music_pause_stop_control_play_80459;
-            this.pictureBox5.Location = new System.Drawing.Point(317, 290);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(54, 31);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 47;
-            this.pictureBox5.TabStop = false;
+            this.invertirToolStripMenuItem.Name = "invertirToolStripMenuItem";
+            this.invertirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.invertirToolStripMenuItem.Text = "Invertir";
+            this.invertirToolStripMenuItem.Click += new System.EventHandler(this.invertirToolStripMenuItem_Click_1);
             // 
-            // pictureBox4
+            // aberracionToolStripMenuItem
             // 
-            this.pictureBox4.Image = global::procesamiento_de_imagenes.Properties.Resources.video_movie_go_next_last_icon_191657;
-            this.pictureBox4.Location = new System.Drawing.Point(389, 290);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(54, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 46;
-            this.pictureBox4.TabStop = false;
+            this.aberracionToolStripMenuItem.Name = "aberracionToolStripMenuItem";
+            this.aberracionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aberracionToolStripMenuItem.Text = "Aberracion";
             // 
-            // pictureBox3
+            // colorizarToolStripMenuItem
             // 
-            this.pictureBox3.Image = global::procesamiento_de_imagenes.Properties.Resources._1486348532_music_play_pause_control_go_arrow_80458;
-            this.pictureBox3.Location = new System.Drawing.Point(230, 290);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(54, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 45;
-            this.pictureBox3.TabStop = false;
+            this.colorizarToolStripMenuItem.Name = "colorizarToolStripMenuItem";
+            this.colorizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorizarToolStripMenuItem.Text = "Colorizar";
+            // 
+            // gammaToolStripMenuItem
+            // 
+            this.gammaToolStripMenuItem.Name = "gammaToolStripMenuItem";
+            this.gammaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gammaToolStripMenuItem.Text = "Gamma";
+            // 
+            // brilloToolStripMenuItem
+            // 
+            this.brilloToolStripMenuItem.Name = "brilloToolStripMenuItem";
+            this.brilloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.brilloToolStripMenuItem.Text = "Brillo";
+            // 
+            // contrasteToolStripMenuItem
+            // 
+            this.contrasteToolStripMenuItem.Name = "contrasteToolStripMenuItem";
+            this.contrasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contrasteToolStripMenuItem.Text = "Contraste";
+            // 
+            // sobbelToolStripMenuItem
+            // 
+            this.sobbelToolStripMenuItem.Name = "sobbelToolStripMenuItem";
+            this.sobbelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobbelToolStripMenuItem.Text = "Sobbel";
+            // 
+            // ruidoToolStripMenuItem
+            // 
+            this.ruidoToolStripMenuItem.Name = "ruidoToolStripMenuItem";
+            this.ruidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ruidoToolStripMenuItem.Text = "Ruido";
+            // 
+            // pixelacionToolStripMenuItem
+            // 
+            this.pixelacionToolStripMenuItem.Name = "pixelacionToolStripMenuItem";
+            this.pixelacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pixelacionToolStripMenuItem.Text = "Pixelacion";
+            // 
+            // saturacionToolStripMenuItem
+            // 
+            this.saturacionToolStripMenuItem.Name = "saturacionToolStripMenuItem";
+            this.saturacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saturacionToolStripMenuItem.Text = "Saturacion";
             // 
             // cargarvideo
             // 
@@ -236,61 +230,44 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1048, 537);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.trackBar6);
-            this.Controls.Add(this.trackBar5);
-            this.Controls.Add(this.trackBar4);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.trackBar2);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_parar);
+            this.Controls.Add(this.Btn_guardar);
+            this.Controls.Add(this.btn_reproducir);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.BtnFoto);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Btnvideo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cargarvideo";
             this.Text = "cargarvideo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.cargarvideo_FormClosing);
             this.Load += new System.EventHandler(this.cargarvideo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TrackBar trackBar6;
-        private System.Windows.Forms.TrackBar trackBar5;
-        private System.Windows.Forms.TrackBar trackBar4;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_guardar;
+        private System.Windows.Forms.Button btn_reproducir;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button BtnFoto;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button Btnvideo;
+        private System.Windows.Forms.Button btn_parar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem filtrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invertirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aberracionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gammaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem brilloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contrasteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobbelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ruidoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pixelacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saturacionToolStripMenuItem;
     }
 }

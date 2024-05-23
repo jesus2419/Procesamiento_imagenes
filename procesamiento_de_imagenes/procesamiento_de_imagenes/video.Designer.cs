@@ -184,6 +184,7 @@
             this.BtnFoto.TabIndex = 20;
             this.BtnFoto.Text = "Grabar Video";
             this.BtnFoto.UseVisualStyleBackColor = false;
+            this.BtnFoto.Click += new System.EventHandler(this.BtnFoto_Click);
             // 
             // pictureBox6
             // 

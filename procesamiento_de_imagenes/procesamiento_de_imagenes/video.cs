@@ -84,5 +84,10 @@ namespace procesamiento_de_imagenes
                 pictureBox1.Image = null; // Limpiar la imagen en el PictureBox
             }
         }
+
+        private void BtnFoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
