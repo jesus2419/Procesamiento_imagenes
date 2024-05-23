@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.trackBarB = new System.Windows.Forms.TrackBar();
-            this.trackBarG = new System.Windows.Forms.TrackBar();
-            this.trackBarR = new System.Windows.Forms.TrackBar();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnFoto = new System.Windows.Forms.Button();
@@ -51,42 +48,11 @@
             this.pixelacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.trackBarGray = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGray)).BeginInit();
             this.SuspendLayout();
-            // 
-            // trackBarB
-            // 
-            this.trackBarB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.trackBarB.Location = new System.Drawing.Point(118, 504);
-            this.trackBarB.Name = "trackBarB";
-            this.trackBarB.Size = new System.Drawing.Size(313, 45);
-            this.trackBarB.TabIndex = 28;
-            this.trackBarB.Scroll += new System.EventHandler(this.trackBarB_Scroll);
-            // 
-            // trackBarG
-            // 
-            this.trackBarG.BackColor = System.Drawing.Color.DarkGreen;
-            this.trackBarG.Location = new System.Drawing.Point(118, 453);
-            this.trackBarG.Name = "trackBarG";
-            this.trackBarG.Size = new System.Drawing.Size(313, 45);
-            this.trackBarG.TabIndex = 27;
-            this.trackBarG.Scroll += new System.EventHandler(this.trackBarG_Scroll);
-            // 
-            // trackBarR
-            // 
-            this.trackBarR.BackColor = System.Drawing.Color.Red;
-            this.trackBarR.Location = new System.Drawing.Point(118, 402);
-            this.trackBarR.Name = "trackBarR";
-            this.trackBarR.Size = new System.Drawing.Size(313, 45);
-            this.trackBarR.TabIndex = 26;
-            this.trackBarR.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // btn_guardar
             // 
@@ -97,7 +63,7 @@
             this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.ForeColor = System.Drawing.SystemColors.Window;
             this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_guardar.Location = new System.Drawing.Point(325, 319);
+            this.btn_guardar.Location = new System.Drawing.Point(498, 534);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(106, 30);
             this.btn_guardar.TabIndex = 25;
@@ -109,7 +75,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(115, 30);
+            this.label2.Location = new System.Drawing.Point(36, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 23;
@@ -124,7 +90,7 @@
             this.BtnFoto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnFoto.ForeColor = System.Drawing.SystemColors.Window;
             this.BtnFoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnFoto.Location = new System.Drawing.Point(85, 319);
+            this.BtnFoto.Location = new System.Drawing.Point(39, 534);
             this.BtnFoto.Name = "BtnFoto";
             this.BtnFoto.Size = new System.Drawing.Size(125, 30);
             this.BtnFoto.TabIndex = 20;
@@ -134,15 +100,17 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(118, 52);
+            this.pictureBox2.Location = new System.Drawing.Point(39, 52);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(313, 261);
+            this.pictureBox2.Size = new System.Drawing.Size(565, 476);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menuStrip1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.filtrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -240,28 +208,29 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(631, 52);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(635, 52);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(383, 476);
             this.chart1.TabIndex = 34;
             this.chart1.Text = "chart1";
             // 
-            // trackBarGray
+            // label1
             // 
-            this.trackBarGray.BackColor = System.Drawing.Color.SlateGray;
-            this.trackBarGray.Location = new System.Drawing.Point(464, 504);
-            this.trackBarGray.Name = "trackBarGray";
-            this.trackBarGray.Size = new System.Drawing.Size(313, 45);
-            this.trackBarGray.TabIndex = 33;
-            this.trackBarGray.Scroll += new System.EventHandler(this.trackBarGray_Scroll);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(632, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 17);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Histograma";
             // 
             // cargarfoto
             // 
@@ -269,11 +238,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1064, 576);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.trackBarGray);
-            this.Controls.Add(this.trackBarB);
-            this.Controls.Add(this.trackBarG);
-            this.Controls.Add(this.trackBarR);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnFoto);
@@ -284,23 +250,16 @@
             this.Name = "cargarfoto";
             this.Text = "cargarfoto";
             this.Load += new System.EventHandler(this.cargarfoto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarGray)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TrackBar trackBarB;
-        private System.Windows.Forms.TrackBar trackBarG;
-        private System.Windows.Forms.TrackBar trackBarR;
         private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnFoto;
@@ -318,6 +277,6 @@
         private System.Windows.Forms.ToolStripMenuItem pixelacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saturacionToolStripMenuItem;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.TrackBar trackBarGray;
+        private System.Windows.Forms.Label label1;
     }
 }

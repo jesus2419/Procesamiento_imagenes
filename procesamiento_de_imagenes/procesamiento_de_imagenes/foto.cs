@@ -102,7 +102,14 @@ namespace procesamiento_de_imagenes
                             // Draw the label above the rectangle
                             string label = $"Persona {i + 1}";
                             Point labelPosition = new Point(faces[i].X, faces[i].Y - 10);
-                            CvInvoke.PutText(imageFrame, label, labelPosition, FontFace.HersheySimplex, 0.5, color.MCvScalar);
+
+                            // Ensure the text is within the image boundaries
+                            if (labelPosition.Y < 0)
+                            {
+                                labelPosition.Y = faces[i].Y + faces[i].Height + 20; // Move text below the face if it's too high
+                            }
+
+                            CvInvoke.PutText(imageFrame, label, labelPosition, FontFace.HersheySimplex, 1.0, new MCvScalar(0, 255, 0), 2); // Increased font scale to 1.0
                         }
 
                         Console.WriteLine($"{faces.Length} rostro(s) detectado(s).");

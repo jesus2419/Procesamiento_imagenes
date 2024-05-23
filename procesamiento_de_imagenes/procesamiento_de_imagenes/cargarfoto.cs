@@ -180,11 +180,7 @@ namespace procesamiento_de_imagenes
             }
         }
 
-        private void trackBar1_Scroll(object sender, EventArgs e)
-        {
-            ApplyColorization();
-
-        }
+       
 
         private void colorizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -228,82 +224,13 @@ namespace procesamiento_de_imagenes
         }
 
 
-        private void ApplyColorization()
-        {
-            if (originalBitmap != null)
-            {
-                Bitmap bitmap = new Bitmap(originalBitmap);
-
-                // Obtener los valores de los TrackBars para colorización
-                double factorR = (double)trackBarR.Value / 255.0;
-                double factorG = (double)trackBarG.Value / 255.0;
-                double factorB = (double)trackBarB.Value / 255.0;
-
-                // Obtener el valor del TrackBar de gris
-                double factorGray = (double)trackBarGray.Value / 255.0;
-
-                // Aplicar colorización a cada píxel
-                for (int y = 0; y < bitmap.Height; y++)
-                {
-                    for (int x = 0; x < bitmap.Width; x++)
-                    {
-                        Color originalColor = bitmap.GetPixel(x, y);
-
-                        // Convertir a escala de grises
-                        int gray = (int)(originalColor.R * 0.299 + originalColor.G * 0.587 + originalColor.B * 0.114);
-
-                        // Aplicar el nivel de gris seleccionado
-                        gray = (int)(gray * factorGray);
-
-                        // Aplicar los factores de color seleccionados
-                        int red = (int)(gray * factorR);
-                        int green = (int)(gray * factorG);
-                        int blue = (int)(gray * factorB);
-
-                        // Asegurarse de que los valores estén en el rango válido (0-255)
-                        red = Math.Max(0, Math.Min(255, red));
-                        green = Math.Max(0, Math.Min(255, green));
-                        blue = Math.Max(0, Math.Min(255, blue));
-
-                        Color colorizedColor = Color.FromArgb(originalColor.A, red, green, blue);
-                        bitmap.SetPixel(x, y, colorizedColor);
-                    }
-                }
-
-                // Asignar la imagen colorizada al PictureBox
-                pictureBox2.Image = bitmap;
-            }
-            else
-            {
-                MessageBox.Show("No hay imagen cargada para colorizar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
 
         private void cargarfoto_Load(object sender, EventArgs e)
         {
-            trackBarR.Visible = false;
-            trackBarG.Visible = false;
-            trackBarB.Visible = false;
-            trackBarGray.Visible = false;
+           
         }
 
-        private void trackBarG_Scroll(object sender, EventArgs e)
-        {
-            ApplyColorization();
-
-        }
-
-        private void trackBarB_Scroll(object sender, EventArgs e)
-        {
-            ApplyColorization();
-
-        }
-
-        private void trackBarGray_Scroll(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void gammaToolStripMenuItem_Click(object sender, EventArgs e)
         {

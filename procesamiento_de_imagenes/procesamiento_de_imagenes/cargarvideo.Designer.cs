@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.Btn_guardar = new System.Windows.Forms.Button();
             this.btn_reproducir = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,8 +49,10 @@
             this.ruidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pixelacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_guardar
@@ -65,6 +70,7 @@
             this.Btn_guardar.TabIndex = 38;
             this.Btn_guardar.Text = "Guardar video";
             this.Btn_guardar.UseVisualStyleBackColor = false;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // btn_reproducir
             // 
@@ -135,6 +141,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menuStrip1
             // 
@@ -175,54 +182,79 @@
             this.aberracionToolStripMenuItem.Name = "aberracionToolStripMenuItem";
             this.aberracionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aberracionToolStripMenuItem.Text = "Aberracion";
+            this.aberracionToolStripMenuItem.Click += new System.EventHandler(this.aberracionToolStripMenuItem_Click_1);
             // 
             // colorizarToolStripMenuItem
             // 
             this.colorizarToolStripMenuItem.Name = "colorizarToolStripMenuItem";
             this.colorizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorizarToolStripMenuItem.Text = "Colorizar";
+            this.colorizarToolStripMenuItem.Click += new System.EventHandler(this.colorizarToolStripMenuItem_Click);
             // 
             // gammaToolStripMenuItem
             // 
             this.gammaToolStripMenuItem.Name = "gammaToolStripMenuItem";
             this.gammaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gammaToolStripMenuItem.Text = "Gamma";
+            this.gammaToolStripMenuItem.Click += new System.EventHandler(this.gammaToolStripMenuItem_Click);
             // 
             // brilloToolStripMenuItem
             // 
             this.brilloToolStripMenuItem.Name = "brilloToolStripMenuItem";
             this.brilloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.brilloToolStripMenuItem.Text = "Brillo";
+            this.brilloToolStripMenuItem.Click += new System.EventHandler(this.brilloToolStripMenuItem_Click);
             // 
             // contrasteToolStripMenuItem
             // 
             this.contrasteToolStripMenuItem.Name = "contrasteToolStripMenuItem";
             this.contrasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contrasteToolStripMenuItem.Text = "Contraste";
+            this.contrasteToolStripMenuItem.Click += new System.EventHandler(this.contrasteToolStripMenuItem_Click);
             // 
             // sobbelToolStripMenuItem
             // 
             this.sobbelToolStripMenuItem.Name = "sobbelToolStripMenuItem";
             this.sobbelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sobbelToolStripMenuItem.Text = "Sobbel";
+            this.sobbelToolStripMenuItem.Click += new System.EventHandler(this.sobbelToolStripMenuItem_Click);
             // 
             // ruidoToolStripMenuItem
             // 
             this.ruidoToolStripMenuItem.Name = "ruidoToolStripMenuItem";
             this.ruidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ruidoToolStripMenuItem.Text = "Ruido";
+            this.ruidoToolStripMenuItem.Click += new System.EventHandler(this.ruidoToolStripMenuItem_Click);
             // 
             // pixelacionToolStripMenuItem
             // 
             this.pixelacionToolStripMenuItem.Name = "pixelacionToolStripMenuItem";
             this.pixelacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pixelacionToolStripMenuItem.Text = "Pixelacion";
+            this.pixelacionToolStripMenuItem.Click += new System.EventHandler(this.pixelacionToolStripMenuItem_Click);
             // 
             // saturacionToolStripMenuItem
             // 
             this.saturacionToolStripMenuItem.Name = "saturacionToolStripMenuItem";
             this.saturacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saturacionToolStripMenuItem.Text = "Saturacion";
+            this.saturacionToolStripMenuItem.Click += new System.EventHandler(this.saturacionToolStripMenuItem_Click);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(748, 52);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.TabIndex = 53;
+            this.chart1.Text = "chart1";
             // 
             // cargarvideo
             // 
@@ -230,6 +262,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1048, 537);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_parar);
@@ -245,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +303,6 @@
         private System.Windows.Forms.ToolStripMenuItem ruidoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pixelacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saturacionToolStripMenuItem;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
